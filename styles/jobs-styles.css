@@ -1,5 +1,126 @@
-/* Bayloom: shared styles from Hassan's home page */
-/* Basic page styles */
+/* ===== BAYLOOM SHARED STYLES: page, header and footer =====
+   Paste into your CSS file (or link this file). Keep the same
+   colours and fonts so every page matches. */
+
+/* Whole page */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #344B40;
+    background-color: #FFFDF5;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: #183F34;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: #FAF8F2;
+    border-bottom: 1px solid #DDDFD2;
+    padding: 20px 8%;
+}
+
+.brand {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.brand img {
+    width: 180px;
+    height: auto;
+}
+
+.brand p {
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #183F34;
+}
+
+nav {
+    display: inline-block;
+    width: 68%;
+    vertical-align: middle;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #344B40;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+nav a.current {
+    background-color: #183F34;
+    color: #FFFFFF;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #E8EDDF;
+    color: #183F34;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #13342B;
+    color: #E0E9E1;
+    text-align: center;
+    padding: 40px 8%;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+.footer-brand {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #FFFDF5;
+}
+
+footer a {
+    color: #FFFDF5;
+}
+
+footer a:hover, footer a:focus {
+    color: #E5C993;
+}
+
+footer .small {
+    font-size: 14px;
+    color: #C3D0C6;
+}
+
+/* Keyboard users can see which link is selected */
+a:focus {
+    outline: 3px solid #A36A19;
+}
+
+/* ---------- Phones: centre the logo and menu ---------- */
+@media screen and (max-width: 800px) {
+    .brand, nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px 14px;
+    }
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -11,24 +132,6 @@ body {
 }
 
 img { max-width: 100%; height: auto; }
-
-/* Top navigation bar — supplied CSS */
-.site-header {
-    background-color: #FAF8F2;
-    border-bottom: 1px solid #DDDCD2;
-    padding: 24px 0;
-}
-
-.header-content {
-    width: 88%;
-    max-width: 1150px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-    flex-wrap: wrap;
-}
 
 .brand { color: #183F34; text-decoration: none; }
 
@@ -51,54 +154,13 @@ img { max-width: 100%; height: auto; }
     text-transform: uppercase;
 }
 
-/* This addition sizes the supplied SVG instead of repeating its wordmark. */
 .brand-logo { display: block; width: 185px; height: auto; }
 
-.site-header nav { display: flex; gap: 8px; flex-wrap: wrap; }
-
-.site-header nav a {
-    padding: 9px 18px;
-    color: #344B40;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.7;
-    border-radius: 25px;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.site-header nav a:hover { background-color: #E8EDDF; color: #183F34; }
-.site-header nav a[aria-current="page"] { background-color: #183F34; color: #FFFFFF; }
-.site-header a:focus-visible { outline: 3px solid #A36A19; outline-offset: 4px; }
-
-/* Bottom footer — supplied CSS */
-.site-footer {
-    padding: 40px 0;
-    background-color: #183F34;
-    color: #E0E9E1;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.site-footer .container { width: 88%; max-width: 1150px; margin: 0 auto; }
-.site-footer p { margin: 0 0 8px; font-size: 13px; line-height: 1.7; }
-.site-footer .footer-brand { color: #FFFDF5; font-size: 27px; font-weight: bold; }
-
-/* Footer additions for the assignment's required project links */
-.site-footer .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 24px; margin: 18px 0 12px; }
-.site-footer .footer-links a { color: #FFFDF5; font-size: 13px; text-underline-offset: 4px; }
-.site-footer .footer-links a[href]:hover { color: #E5C993; }
-.site-footer a[aria-disabled="true"] { color: #B8C9BC; cursor: default; }
-.site-footer .footer-note { color: #C3D0C6; font-size: 11px; }
-
-
-/* Shared keyboard access */
 a:focus-visible, button:focus-visible, input:focus-visible,
 select:focus-visible, textarea:focus-visible {
     outline: 3px solid #A36A19;
     outline-offset: 4px;
 }
-.site-footer a:focus-visible { outline-color: #E5C993; }
 .skip-link {
     position: absolute;
     top: -100px;
@@ -109,17 +171,7 @@ select:focus-visible, textarea:focus-visible {
     color: #FFFFFF;
 }
 .skip-link:focus { top: 10px; }
-/* Smaller screens — supplied header rules */
-@media (max-width: 600px) {
-    .header-content { flex-direction: column; gap: 20px; }
-    .brand { text-align: center; }
-    .brand-logo { margin: 0 auto; }
-    .site-header nav { justify-content: center; gap: 4px; }
-    .site-header nav a { padding: 8px 12px; font-size: 13px; }
 
-}
-
-/* Jobs page: headings and reusable page styles */
 .jobs-page .container { width: 88%; max-width: 1150px; margin: 0 auto; }
 .jobs-page h1, .jobs-page h2, .jobs-page h3 { color: #183F34; }
 .jobs-page h1, .jobs-page h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; }
@@ -143,12 +195,9 @@ select:focus-visible, textarea:focus-visible {
     .jobs-page h2 { font-size: 28px; }
 }
 
-/* Jobs page: Rayan
-   flow-root keeps the floated aside inside the content area. */
 .jobs-page .jobs-content { display: flow-root; padding-top: 45px; padding-bottom: 55px; }
 .jobs-page .role-links { display: flex; flex-wrap: wrap; gap: 12px 28px; font-size: 14px; }
 
-/* The assignment requires a right-floated aside with 25% width. */
 .jobs-page .jobs-aside {
     float: right;
     width: 25%;
