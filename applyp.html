@@ -23,7 +23,6 @@
                 <a href="jobs.html">Jobs</a>
                 <a href="apply.html" aria-current="page">Apply</a>
                 <a href="about.html">About</a>
-                <a href="impact.html">Our Impact</a>
             </nav>
         </div>
     </header>
@@ -49,8 +48,8 @@
                     <div class="form-grid">
                         <div class="field-wide">
                             <label for="jobref">Job reference number</label>
-                            <input id="jobref" name="jobref" type="text" pattern="[A-Za-z0-9]{5}" minlength="5" maxlength="5" required placeholder="e.g. ED101" aria-describedby="jobref-help" title="Enter exactly five letters or numbers.">
-                            <p class="field-help" id="jobref-help">ED101: Web Developer &nbsp; | &nbsp; ED102: UI/UX Designer. Enter five letters or numbers.</p>
+                            <input id="jobref" name="jobref" type="text" pattern="[A-Za-z0-9]{5}" minlength="5" maxlength="5" required>
+                            <p class="field-help">ED101: Web Developer  |   ED102: UI/UX Designer. Enter five letters or numbers.</p>
                         </div>
                     </div>
                 </fieldset>
@@ -60,26 +59,23 @@
                     <div class="form-grid">
                         <div>
                             <label for="first-name">First name</label>
-                            <input id="first-name" name="firstname" type="text" autocomplete="given-name" maxlength="20" pattern="[A-Za-z]{1,20}" required aria-describedby="name-help" title="Use 1 to 20 letters A-Z, with no spaces or punctuation.">
+                            <input id="first-name" name="firstname" type="text" autocomplete="given-name" maxlength="20" pattern="[A-Za-z]{1,20}" required title="Use 1 to 20 letters A-Z, with no spaces or punctuation.">
                         </div>
                         <div>
                             <label for="last-name">Last name</label>
                             <input id="last-name" name="lastname" type="text" autocomplete="family-name" maxlength="20" pattern="[A-Za-z]{1,20}" required aria-describedby="name-help" title="Use 1 to 20 letters A-Z, with no spaces or punctuation.">
                         </div>
-                        <p class="field-help field-wide" id="name-help">For this assignment, names must use 1&ndash;20 letters A&ndash;Z, without spaces or punctuation.</p>
+                        <p class="field-help field-wide" id="name-help">For this assignment, names must use 1 to 20 letters A to Z, without spaces or punctuation.</p>
                         <div>
                             <label for="dob">Date of birth</label>
-                            <!-- This pattern checks format and broad ranges, not full calendar validity. -->
-                            <input id="dob" name="dob" type="text" autocomplete="bday" maxlength="10" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}" required placeholder="dd/mm/yyyy" aria-describedby="dob-help" title="Use dd/mm/yyyy, for example 15/06/2000.">
-                            <p class="field-help" id="dob-help">Use dd/mm/yyyy, for example 15/06/2000.</p>
+                            <input id="dob" name="dob" type="text" autocomplete="bday" maxlength="10" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}" required>
+                            <p class="field-help">dd/mm/yyyy</p>
                         </div>
                         <fieldset class="choice-group field-wide">
                             <legend>Gender</legend>
                             <div class="choices">
                                 <label class="choice" for="gender-female"><input id="gender-female" name="gender" type="radio" value="female" required> Female</label>
                                 <label class="choice" for="gender-male"><input id="gender-male" name="gender" type="radio" value="male" required> Male</label>
-                                <label class="choice" for="gender-other"><input id="gender-other" name="gender" type="radio" value="other" required> Other</label>
-                                <label class="choice" for="gender-private"><input id="gender-private" name="gender" type="radio" value="prefer-not-to-say" required> Prefer not to say</label>
                             </div>
                         </fieldset>
                     </div>
@@ -106,6 +102,10 @@
                                 <option value="NSW">NSW</option>
                                 <option value="QLD">QLD</option>
                                 <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
                             </select>
                         </div>
                         <div>
@@ -120,7 +120,7 @@
                         </div>
                         <div class="field-wide">
                             <label for="email">Email address</label>
-                            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+                            <input id="email" name="email" type="email" autocomplete="email" required>
                         </div>
                     </div>
                 </fieldset>
@@ -131,10 +131,10 @@
                         <legend>Core skills</legend>
                         <p class="skills-help" id="skills-help">All four core skills are required in this reference form. Tick each skill you can demonstrate.</p>
                         <div class="skills-grid">
-                            <label class="choice" for="skill-communication"><input id="skill-communication" type="checkbox" name="skills[]" value="communication" required> Communication</label>
-                            <label class="choice" for="skill-teamwork"><input id="skill-teamwork" type="checkbox" name="skills[]" value="teamwork" required> Teamwork</label>
-                            <label class="choice" for="skill-problem-solving"><input id="skill-problem-solving" type="checkbox" name="skills[]" value="problem-solving" required> Problem solving</label>
-                            <label class="choice" for="skill-digital"><input id="skill-digital" type="checkbox" name="skills[]" value="digital-literacy" required> Digital literacy</label>
+                            <label class="choice" for="skill-communication"><input id="skill-communication" type="checkbox" name="skills[]"> Communication</label>
+                            <label class="choice" for="skill-teamwork"><input id="skill-teamwork" type="checkbox" name="skills[]" > Teamwork</label>
+                            <label class="choice" for="skill-problem-solving"><input id="skill-problem-solving" type="checkbox" name="skills[]"> Problem solving</label>
+                            <label class="choice" for="skill-digital"><input id="skill-digital" type="checkbox" name="skills[]" > Digital literacy</label>
                         </div>
                     </fieldset>
                     <div class="other-skills">
@@ -160,12 +160,11 @@
             <p>&copy; 2026 Bayloom. G04 student project.</p>
 
             <nav class="footer-links" aria-label="Project links">
-                <a aria-disabled="true">Jira</a>
-                <a aria-disabled="true">GitHub</a>
-                <a aria-disabled="true">Live website</a>
+                <a href="https://joud-khalal.atlassian.net/browse/SCRUM-10?atlOrigin=eyJpIjoiMTU3OWRhNzBkZWZmNDEyMTkyOGJkMjUxN2FjY2UxNjIiLCJwIjoiaiJ9" aria-disabled="true">Jira</a>
+                <a href="https://github.com/106680819/group04-edtech.git" aria-disabled="true">GitHub</a>
                 <a href="mailto:careers@bayloom.example">Email Bayloom</a>
             </nav>
-            <p class="footer-note">Project links pending | Demonstration email address</p>
+            <p class="footer-note">Indigenous Acknowledgement: We respectfully acknowledge the Wurundjeri People, and their Elders past and present, who are the Traditional Owners of the land on which Swinburne's Australian campuses are located in Melbourne's east and outer-eas</p>
         </div>
     </footer>
 </body>
