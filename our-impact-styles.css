@@ -81,6 +81,15 @@ nav a[aria-current="page"] {
 
 .impact-hero {
     background-color: #E8EDDF;
+    background-image:
+        linear-gradient(
+            rgba(255, 253, 245, 0.82),
+            rgba(232, 237, 223, 0.82)
+        ),
+        url("images/impact-learning.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 110px 0;
 }
 
