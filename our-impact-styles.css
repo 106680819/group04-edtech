@@ -27,6 +27,7 @@ h3 {
     font-size: 24px;
 }
 
+/*HEADER AND NAVIGATION*/
 .site-header {
     background-color: #FAF8F2;
     border-bottom: 1px solid #DDDFD2;
@@ -73,11 +74,14 @@ nav a[aria-current="page"] {
     color: #183F34;
 }
 
+/*MAIN CONTENT*/
 .impact-container {
     width: 84%;
     max-width: 1100px;
     margin: 0 auto;
 }
+
+/* Hero section with background image */
 
 .impact-hero {
     background-color: #E8EDDF;
@@ -111,6 +115,8 @@ nav a[aria-current="page"] {
     margin-bottom: 30px;
 }
 
+/* Buttons */
+
 .impact-button {
     display: inline-block;
     background-color: #183F34;
@@ -121,10 +127,13 @@ nav a[aria-current="page"] {
     font-weight: bold;
 }
 
-.impact-button:hover {
+.impact-button:hover,
+.impact-button:focus {
     background-color: #A36A19;
+    color: white;
 }
 
+/*CONTENT SECTIONS*/
 .impact-section {
     padding: 85px 0;
 }
@@ -138,6 +147,7 @@ nav a[aria-current="page"] {
     margin-bottom: 35px;
 }
 
+/*IMPACT CARDS*/
 .impact-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -161,6 +171,7 @@ nav a[aria-current="page"] {
     margin-bottom: 10px;
 }
 
+/*FOCUS AREAS TABLE*/
 .impact-table-wrapper {
     overflow-x: auto;
 }
@@ -195,6 +206,8 @@ nav a[aria-current="page"] {
     background-color: #E8EDDF;
 }
 
+/*OUR APPROACH */
+
 .impact-feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -208,6 +221,7 @@ nav a[aria-current="page"] {
     padding: 15px 20px;
 }
 
+/*HOW WE CREATE IMPACT*/
 
 .impact-steps {
     display: grid;
@@ -226,9 +240,48 @@ nav a[aria-current="page"] {
     color: #183F34;
 }
 
-/* =================================
-   MOBILE RESPONSIVE DESIGN
-   ================================= */
+/*FOOTER*/
+
+footer {
+    background-color: #13342B;
+    color: #E0E9E1;
+    text-align: center;
+    padding: 40px 8%;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+.footer-brand {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #FFFDF5;
+}
+
+footer a {
+    color: #FFFDF5;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #E5C993;
+}
+
+footer .small {
+    font-size: 14px;
+    color: #C3D0C6;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+a:focus-visible {
+    outline: 3px solid #A36A19;
+    outline-offset: 4px;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
 
 @media screen and (max-width: 800px) {
 
@@ -265,125 +318,5 @@ nav a[aria-current="page"] {
 
     h2 {
         font-size: 30px;
-    }
-}
-
-/*footer*/
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    line-height: 1.7;
-    color: #344B40;
-    background-color: #FFFDF5;
-}
-
-/* Headings */
-h1, h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: normal;
-    color: #183F34;
-}
-
-/* ---------- Header ---------- */
-header {
-    background-color: #FAF8F2;
-    border-bottom: 1px solid #DDDFD2;
-    padding: 20px 8%;
-}
-
-.brand {
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
-}
-
-.brand img {
-    width: 180px;
-    height: auto;
-}
-
-.brand p {
-    margin: 0;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #183F34;
-}
-
-nav {
-    display: inline-block;
-    width: 68%;
-    vertical-align: middle;
-    text-align: right;
-}
-
-nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #344B40;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 25px;
-}
-
-nav a.current {
-    background-color: #183F34;
-    color: #FFFFFF;
-}
-
-nav a:hover, nav a:focus {
-    background-color: #E8EDDF;
-    color: #183F34;
-}
-
-/* ---------- Footer ---------- */
-footer {
-    background-color: #13342B;
-    color: #E0E9E1;
-    text-align: center;
-    padding: 40px 8%;
-}
-
-footer p {
-    margin: 6px 0;
-}
-
-.footer-brand {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 6px;
-    color: #FFFDF5;
-}
-
-footer a {
-    color: #FFFDF5;
-}
-
-footer a:hover, footer a:focus {
-    color: #E5C993;
-}
-
-footer .small {
-    font-size: 14px;
-    color: #C3D0C6;
-}
-
-/* Keyboard users can see which link is selected */
-a:focus {
-    outline: 3px solid #A36A19;
-}
-
-/* ---------- Phones: centre the logo and menu ---------- */
-@media screen and (max-width: 800px) {
-    .brand, nav {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav a {
-        padding: 10px 14px;
     }
 }
