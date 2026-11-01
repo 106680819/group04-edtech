@@ -1,0 +1,1367 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #344B40;
+    background-color: #FFFDF5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 15px;
+    z-index: 10;
+    padding: 10px 18px;
+    background-color: #183F34;
+    color: #FFFFFF;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+header {
+    background-color: #FAF8F2;
+    border-bottom: 1px solid #DDDFD2;
+    padding: 20px 8%;
+    font-size: 16px;
+}
+
+.brand {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.brand img {
+    width: 180px;
+    height: auto;
+}
+
+.brand p {
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #183F34;
+}
+
+header nav {
+    display: inline-block;
+    width: 68%;
+    vertical-align: middle;
+    text-align: right;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #344B40;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+header nav a.current {
+    background-color: #183F34;
+    color: #FFFFFF;
+}
+
+header nav a:hover, header nav a:focus {
+    background-color: #E8EDDF;
+    color: #183F34;
+}
+
+footer {
+    background-color: #13342B;
+    color: #E0E9E1;
+    text-align: center;
+    padding: 40px 8%;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+footer .footer-brand {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #FFFDF5;
+}
+
+footer a {
+    color: #FFFDF5;
+}
+
+footer a:hover, footer a:focus {
+    color: #E5C993;
+}
+
+footer .small {
+    font-size: 14px;
+    color: #C3D0C6;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid #A36A19;
+    outline-offset: 2px;
+}
+
+footer a:focus {
+    outline-color: #E5C993;
+}
+
+@media screen and (max-width: 800px) {
+    .brand, header nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a {
+        padding: 10px 14px;
+    }
+}
+
+.home-page {
+    font-size: 17px;
+}
+
+.home-page h1, .home-page h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: #183F34;
+}
+
+.home-page h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 10px 0 20px 0;
+}
+
+.home-page h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 10px 0 20px 0;
+}
+
+.home-page h3 {
+    font-size: 22px;
+    color: #183F34;
+    margin-top: 0;
+}
+
+.home-page section {
+    padding: 70px 8%;
+}
+
+.home-page .column-left {
+    display: inline-block;
+    width: 46%;
+    vertical-align: middle;
+}
+
+.home-page .column-right {
+    display: inline-block;
+    width: 46%;
+    margin-left: 6%;
+    vertical-align: middle;
+}
+
+.home-page .label {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #7A5014;
+}
+
+.home-page .gold {
+    color: #A36A19;
+    font-style: italic;
+}
+
+.home-page .slogan {
+    font-size: 19px;
+    color: #183F34;
+}
+
+.home-page .button {
+    display: inline-block;
+    padding: 13px 26px;
+    margin-right: 20px;
+    background-color: #183F34;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.home-page .button:hover, .home-page .button:focus {
+    background-color: #2C5947;
+}
+
+.home-page .text-link {
+    color: #183F34;
+    font-weight: bold;
+}
+
+.home-page .text-link:hover, .home-page .text-link:focus {
+    color: #A36A19;
+}
+
+.home-page .icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.home-page .service-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.home-page .label-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.home-page .hero {
+    background-color: #FAF8F2;
+    border-bottom: 1px solid #DDDFD2;
+}
+
+.home-page .hero-photo {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.home-page .caption {
+    margin: 8px 0 0 0;
+    font-size: 15px;
+    font-style: italic;
+    color: #5A6B60;
+}
+
+.home-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDFD2;
+}
+
+.home-page caption {
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    color: #183F34;
+    padding-bottom: 12px;
+}
+
+.home-page th, .home-page td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #DDDFD2;
+    text-align: left;
+    vertical-align: top;
+}
+
+.home-page th {
+    background-color: #F2F4EA;
+    color: #183F34;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.home-page .table-title {
+    background-color: #183F34;
+    color: #FFFFFF;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.home-page .service {
+    width: 45%;
+    font-weight: bold;
+    color: #183F34;
+}
+
+.home-page .careers {
+    background-color: #E8EDDF;
+}
+
+.home-page .search-box {
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    padding: 30px 34px;
+}
+
+.home-page label {
+    font-weight: bold;
+    color: #183F34;
+}
+
+.home-page input[type="search"] {
+    width: 60%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #7F9184;
+    border-radius: 25px;
+    background-color: #FFFDF5;
+}
+
+.home-page input[type="submit"] {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #183F34;
+    border: none;
+    border-radius: 25px;
+}
+
+.home-page input[type="submit"]:hover, .home-page input[type="submit"]:focus {
+    background-color: #2C5947;
+}
+
+.home-page input[type="search"]:focus {
+    border: 1px solid #183F34;
+    background-color: #FFFFFF;
+}
+
+.home-page main .small {
+    font-size: 14px;
+    color: #5A6B60;
+}
+
+.home-page .note {
+    margin-bottom: 0;
+    padding: 14px 18px;
+    background-color: #F2F4EA;
+    border-left: 4px solid #E5C993;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .home-page .column-left, .home-page .column-right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .home-page .column-right {
+        margin-top: 30px;
+    }
+
+    .home-page .text-link {
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+    .home-page section {
+        padding: 45px 6%;
+    }
+
+    .home-page h1 {
+        font-size: 42px;
+    }
+
+    .home-page h2 {
+        font-size: 32px;
+    }
+
+    .home-page input[type="search"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .home-page .service-icon {
+        display: block;
+        margin-bottom: 6px;
+    }
+}
+
+.jobs-page {
+    font-size: 17px;
+}
+
+.jobs-page .container {
+    width: 88%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.jobs-page h1, .jobs-page h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: #183F34;
+}
+
+.jobs-page h1 {
+    margin: 0 0 20px 0;
+    font-size: 54px;
+    line-height: 1.12;
+}
+
+.jobs-page h1 span {
+    color: #A36A19;
+}
+
+.jobs-page h2 {
+    margin: 0 0 18px 0;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.jobs-page h3 {
+    margin: 24px 0 10px 0;
+    font-size: 17px;
+    color: #183F34;
+}
+
+.jobs-page main p {
+    margin-top: 0;
+}
+
+.jobs-page .section-label {
+    margin-bottom: 14px;
+    color: #765015;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.jobs-page .page-intro {
+    padding: 48px 0;
+    background-color: #FAF8F2;
+    border-bottom: 1px solid #DDDCD2;
+}
+
+.jobs-page .intro-description {
+    margin-bottom: 22px;
+}
+
+.jobs-page .role-links a {
+    margin-right: 28px;
+    font-size: 14px;
+}
+
+.jobs-page .text-link {
+    color: #183F34;
+    font-weight: bold;
+}
+
+.jobs-page .text-link:hover {
+    color: #765015;
+}
+
+.jobs-page .button {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid #183F34;
+    border-radius: 5px;
+    background-color: #183F34;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.jobs-page .button:hover {
+    background-color: #2C5947;
+}
+
+.jobs-page .jobs-content {
+    padding-top: 45px;
+    padding-bottom: 55px;
+    overflow: hidden;
+}
+
+.jobs-page .jobs-aside {
+    float: right;
+    width: 25%;
+    margin: 0 0 25px 4%;
+    padding: 24px;
+    border: 1px solid #CCD4C5;
+    border-radius: 6px;
+    background-color: #E8EDDF;
+    font-size: 14px;
+}
+
+.jobs-page .jobs-aside h2 {
+    font-size: 25px;
+}
+
+.jobs-page .jobs-aside ol {
+    padding-left: 19px;
+}
+
+.jobs-page .jobs-aside li {
+    margin-bottom: 12px;
+}
+
+.jobs-page .jobs-aside hr {
+    margin: 24px 0;
+    border: 0;
+    border-top: 1px solid #C5CEBF;
+}
+
+.jobs-page .aside-note {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.jobs-page .job-list {
+    width: 71%;
+}
+
+.jobs-page .job-card {
+    margin-bottom: 28px;
+    padding: 30px;
+    border: 1px solid #D5DBD0;
+    border-top: 4px solid #183F34;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.jobs-page .job-card .section-label {
+    margin-bottom: 8px;
+}
+
+.jobs-page .job-meta {
+    margin: 23px 0;
+    padding: 20px 20px 6px 20px;
+    background-color: #F4F5EC;
+}
+
+.jobs-page .job-meta div {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 14px;
+    vertical-align: top;
+}
+
+.jobs-page .job-meta dt {
+    font-size: 12px;
+    color: #56665B;
+}
+
+.jobs-page .job-meta dd {
+    margin: 2px 0 0 0;
+    color: #183F34;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.jobs-page .job-card ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.jobs-page .job-card li {
+    margin-bottom: 7px;
+}
+
+.jobs-page .job-apply {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px solid #DDDCD2;
+}
+
+.jobs-page .job-apply p {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 900px) {
+    .jobs-page .jobs-aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .jobs-page .job-list {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .jobs-page .page-intro {
+        padding: 35px 0;
+    }
+
+    .jobs-page h1 {
+        font-size: 40px;
+    }
+
+    .jobs-page h2 {
+        font-size: 28px;
+    }
+
+    .jobs-page .job-card {
+        padding: 22px 18px;
+    }
+
+    .jobs-page .job-meta div {
+        width: 100%;
+    }
+
+    .jobs-page .job-apply p {
+        display: block;
+        margin: 12px 0 0 0;
+    }
+}
+
+.apply-page .container {
+    width: 88%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.apply-page h1, .apply-page h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: #183F34;
+}
+
+.apply-page h2 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.apply-page main p {
+    margin-top: 0;
+}
+
+.apply-page .section-label {
+    margin-bottom: 14px;
+    color: #765015;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.apply-page .page-intro {
+    padding: 48px 0;
+    background-color: #FAF8F2;
+    border-bottom: 1px solid #DDDCD2;
+}
+
+.apply-page .intro-description {
+    margin-bottom: 22px;
+}
+
+.apply-page .text-link {
+    color: #183F34;
+    font-weight: bold;
+}
+
+.apply-page .text-link:hover {
+    color: #765015;
+}
+
+.apply-page .button {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 12px 22px;
+    border: 1px solid #183F34;
+    border-radius: 5px;
+    background-color: #183F34;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.apply-page .button:hover {
+    background-color: #2C5947;
+}
+
+.apply-page .button-secondary {
+    background-color: #FFFFFF;
+    color: #183F34;
+}
+
+.apply-page .button-secondary:hover {
+    background-color: #E8EDDF;
+}
+
+.apply-page .apply-content {
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+.apply-page .application-form {
+    width: 72%;
+    padding: 30px;
+    border: 1px solid #D5DBD0;
+    border-top: 4px solid #183F34;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.apply-page .form-introduction {
+    margin-bottom: 27px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DDDCD2;
+}
+
+.apply-page .form-introduction p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.apply-page .form-section {
+    margin: 0 0 28px 0;
+    padding: 0 0 27px 0;
+    border: 0;
+    border-bottom: 1px solid #DDDCD2;
+}
+
+.apply-page .form-section legend {
+    margin-bottom: 18px;
+    padding: 0;
+    font-size: 19px;
+    font-weight: bold;
+    color: #183F34;
+}
+
+.apply-page .form-section legend span {
+    margin-right: 8px;
+    color: #765015;
+    font-size: 13px;
+}
+
+.apply-page .form-grid div {
+    display: inline-block;
+    width: 46%;
+    margin: 0 3% 22px 0;
+    vertical-align: top;
+}
+
+.apply-page .form-grid .field-wide {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+}
+
+.apply-page .form-grid .choices {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.apply-page label {
+    display: block;
+    margin-bottom: 7px;
+    color: #183F34;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.apply-page input[type="text"], .apply-page input[type="email"], .apply-page input[type="tel"], .apply-page select, .apply-page textarea {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #889B8D;
+    border-radius: 4px;
+    background-color: #FFFDF5;
+    color: #183F34;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.apply-page .field-help {
+    margin: 7px 0 0 0;
+    font-size: 12px;
+    color: #56665B;
+}
+
+.apply-page .form-grid p.field-wide {
+    margin: 0 0 18px 0;
+}
+
+.apply-page .choice-group {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.apply-page .choice-group legend {
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #183F34;
+}
+
+.apply-page .choice {
+    display: inline-block;
+    margin-right: 22px;
+    font-weight: normal;
+}
+
+.apply-page .choice input {
+    margin-right: 8px;
+}
+
+.apply-page .skills-help {
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.apply-page .skills-grid .choice {
+    width: 46%;
+    margin-bottom: 10px;
+}
+
+.apply-page .other-skills {
+    margin-top: 20px;
+}
+
+.apply-page .submit-note {
+    margin: 16px 0 0 0;
+    font-size: 12px;
+    color: #56665B;
+}
+
+@media screen and (max-width: 900px) {
+    .apply-page .application-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .apply-page .page-intro {
+        padding: 35px 0;
+    }
+
+    .apply-page h2 {
+        font-size: 28px;
+    }
+
+    .apply-page .application-form {
+        padding: 22px 18px;
+    }
+
+    .apply-page .form-grid div {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .apply-page .choice, .apply-page .skills-grid .choice {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .apply-page .button {
+        margin-bottom: 10px;
+    }
+}
+
+.about-page {
+    background-color: #FAF8F2;
+    color: #4D5953;
+}
+
+.about-page .container {
+    width: 88%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.about-page main h1,
+.about-page main h2,
+.about-page main h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: #183F34;
+    line-height: 1.2;
+}
+
+.about-page main h1 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.about-page main h2 {
+    font-size: 38px;
+    margin: 0 0 22px 0;
+}
+
+.about-page main h3 {
+    font-size: 25px;
+    margin: 0 0 8px 0;
+}
+
+.about-page main p {
+    margin: 0 0 18px 0;
+}
+
+.about-page main a {
+    color: #215B46;
+}
+
+.about-page main a:hover {
+    color: #754D13;
+}
+
+.about-page .page-label {
+    color: #42634D;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.about-page .hero {
+    background-color: #183F34;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 8px solid #D9B96E;
+}
+
+.about-page .hero .page-label {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #789282;
+    border-radius: 30px;
+    color: #F1D898;
+}
+
+.about-page .hero h1 {
+    color: #FFFDF5;
+}
+
+.about-page .hero-description {
+    color: #E0E9E1;
+    font-size: 18px;
+}
+
+.about-page .group-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.about-page .group-section div {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.about-page .group-section div:first-child {
+    margin-right: 3%;
+    padding-left: 25px;
+    border-left: 5px solid #D9B96E;
+}
+
+.about-page .group-details {
+    background-color: #EAF0E3;
+    border: 1px solid #D4DECA;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.about-page .group-details ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.about-page .group-details strong {
+    display: block;
+    color: #183F34;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.about-page .group-details li {
+    margin-bottom: 10px;
+}
+
+.about-page .members-section {
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+.about-page .member {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1% 24px 1%;
+    padding: 28px;
+    vertical-align: top;
+    text-align: left;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E4DA;
+    border-radius: 18px;
+}
+
+.about-page .member-role {
+    color: #52644F;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.about-page .student-id {
+    display: inline-block;
+    background-color: #F3F5EF;
+    border: 1px solid #DEE4D5;
+    color: #3D513C;
+    border-radius: 6px;
+    padding: 5px 9px;
+    font-size: 12px;
+}
+
+.about-page main dl {
+    margin: 5px 0 0 0;
+}
+
+.about-page main dt {
+    margin-top: 18px;
+    color: #183F34;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.about-page main dd {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #566157;
+}
+
+.about-page .photo-section {
+    padding-bottom: 65px;
+    text-align: center;
+}
+
+.about-page .team-photos {
+    margin-top: 30px;
+    padding: 40px 25px;
+    background-color: #EAF0E3;
+    border: 1px solid #D4DECA;
+    border-radius: 20px;
+}
+
+.about-page .team-photos img {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    border: 4px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.about-page .facts-section {
+    padding-bottom: 75px;
+}
+
+.about-page .facts-section h2 {
+    text-align: center;
+}
+
+.about-page .table-wrapper {
+    overflow-x: auto;
+}
+
+.about-page main table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+.about-page main caption {
+    padding-bottom: 20px;
+    color: #52614D;
+    font-size: 14px;
+}
+
+.about-page main th,
+.about-page main td {
+    padding: 17px 20px;
+    text-align: left;
+    border: 1px solid #D9E0D1;
+}
+
+.about-page main thead th {
+    background-color: #183F34;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.about-page main tbody th {
+    color: #183F34;
+}
+
+.about-page main tbody tr:hover {
+    background-color: #F6E9C7;
+}
+
+.about-page .inclusion-section {
+    background-color: #E8EEDC;
+    padding: 65px 0;
+    border-top: 1px solid #D4DCC7;
+    border-bottom: 1px solid #D4DCC7;
+    text-align: center;
+}
+
+.about-page .inclusion-section h2 {
+    font-size: 44px;
+}
+
+.about-page .credits-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+
+.about-page .credits-section h2 {
+    font-size: 28px;
+}
+
+.about-page .credits-section p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+    .about-page .hero {
+        padding: 55px 0;
+    }
+
+    .about-page main h1 {
+        font-size: 42px;
+    }
+
+    .about-page main h2,
+    .about-page .inclusion-section h2 {
+        font-size: 32px;
+    }
+
+    .about-page .group-section div {
+        width: 100%;
+    }
+
+    .about-page .group-section div:first-child {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-page .member {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .about-page .team-photos img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-page main th,
+    .about-page main td {
+        padding: 12px;
+    }
+}
+
+.impact-page main h1, .impact-page main h2, .impact-page main h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: #183F34;
+}
+
+.impact-page main h1 {
+    font-size: 55px;
+    line-height: 1.15;
+}
+
+.impact-page main h2 {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.impact-page main h3 {
+    font-size: 24px;
+}
+
+.impact-page .impact-container {
+    width: 84%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.impact-page .impact-hero {
+    background-color: #E8EDDF;
+    padding: 110px 0;
+}
+
+.impact-page .impact-eyebrow {
+    color: #A36A19;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.impact-page .impact-hero h1 {
+    max-width: 650px;
+    margin: 15px 0;
+}
+
+.impact-page .impact-intro {
+    max-width: 650px;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.impact-page .impact-button {
+    display: inline-block;
+    background-color: #183F34;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.impact-page .impact-button:hover,
+.impact-page .impact-button:focus {
+    background-color: #A36A19;
+    color: white;
+}
+
+.impact-page .impact-section {
+    padding: 85px 0;
+}
+
+.impact-page .impact-section-alt {
+    background-color: #F2F1E8;
+}
+
+.impact-page .impact-section-intro {
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+.impact-page .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.impact-page .impact-card {
+    padding: 25px;
+    background-color: #FFFFFF;
+}
+
+.impact-page .impact-number {
+    color: #A36A19;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.impact-page .impact-card h3 {
+    margin-bottom: 10px;
+}
+
+.impact-page .impact-table-wrapper {
+    overflow-x: auto;
+}
+
+.impact-page .impact-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFDF5;
+    margin-top: 30px;
+}
+
+.impact-page .impact-table caption {
+    text-align: left;
+    padding: 15px 0;
+    font-weight: bold;
+    color: #183F34;
+}
+
+.impact-page .impact-table th,
+.impact-page .impact-table td {
+    text-align: left;
+    padding: 18px;
+    border-bottom: 1px solid #DDDFD2;
+}
+
+.impact-page .impact-table thead th {
+    background-color: #183F34;
+    color: white;
+}
+
+.impact-page .impact-table tbody tr:hover {
+    background-color: #E8EDDF;
+}
+
+.impact-page .impact-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.impact-page .impact-note {
+    background-color: #E8EDDF;
+    padding: 15px 20px;
+}
+
+.impact-page .impact-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.impact-page .impact-step {
+    padding: 25px;
+    background-color: #FFFDF5;
+}
+
+.impact-page .impact-step h3 {
+    color: #183F34;
+}
+
+@media screen and (max-width: 800px) {
+    .impact-page .impact-container {
+        width: 90%;
+    }
+
+    .impact-page .impact-grid,
+    .impact-page .impact-steps,
+    .impact-page .impact-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-page .impact-hero {
+        padding: 70px 0;
+    }
+
+    .impact-page main h1 {
+        font-size: 40px;
+    }
+
+    .impact-page main h2 {
+        font-size: 30px;
+    }
+}
