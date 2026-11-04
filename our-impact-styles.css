@@ -1,322 +1,162 @@
+/* GENERAL */
+
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
+    font-family: Arial, sans-serif;
     color: #344B40;
     background-color: #FFFDF5;
 }
 
 h1, h2, h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: normal;
     color: #183F34;
 }
 
-h1 {
-    font-size: 55px;
-    line-height: 1.15;
-}
+/* HEADER */
 
-h2 {
-    font-size: 38px;
-    line-height: 1.2;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-/*HEADER AND NAVIGATION*/
 .site-header {
     background-color: #FAF8F2;
-    border-bottom: 1px solid #DDDFD2;
-    padding: 20px 8%;
+    padding: 20px;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.brand {
-    text-decoration: none;
 }
 
 .brand-logo {
     width: 180px;
-    height: auto;
 }
 
 .brand-description {
-    display: block;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #183F34;
+    font-size: 12px;
 }
 
 nav a {
-    display: inline-block;
-    padding: 10px 13px;
-    color: #344B40;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 25px;
-}
-
-nav a:hover,
-nav a:focus,
-nav a[aria-current="page"] {
-    background-color: #E8EDDF;
     color: #183F34;
+    text-decoration: none;
+    padding: 10px;
 }
 
-/*MAIN CONTENT*/
+/* MAIN CONTENT */
+
 .impact-container {
-    width: 84%;
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 85%;
+    margin: auto;
 }
 
-/* Hero section with background image */
+/* HERO */
 
 .impact-hero {
-    background-color: #E8EDDF;
-    background-image:
-        linear-gradient(
-            rgba(255, 253, 245, 0.82),
-            rgba(232, 237, 223, 0.82)
-        ),
-        url("images/impact-learning.jpg");
+    padding: 80px 0;
+    background-image: url("images/impact-learning.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    padding: 110px 0;
-}
-
-.impact-eyebrow {
-    color: #A36A19;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 3px;
 }
 
 .impact-hero h1 {
-    max-width: 650px;
-    margin: 15px 0;
+    font-size: 45px;
 }
 
 .impact-intro {
-    max-width: 650px;
-    font-size: 19px;
-    margin-bottom: 30px;
+    font-size: 18px;
 }
 
-/* Buttons */
+/* BUTTON */
 
 .impact-button {
-    display: inline-block;
     background-color: #183F34;
     color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
+    padding: 12px 20px;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.impact-button:hover,
-.impact-button:focus {
-    background-color: #A36A19;
-    color: white;
-}
+/* SECTIONS */
 
-/*CONTENT SECTIONS*/
 .impact-section {
-    padding: 85px 0;
+    padding: 40px 0;
 }
 
 .impact-section-alt {
     background-color: #F2F1E8;
 }
 
-.impact-section-intro {
-    max-width: 650px;
-    margin-bottom: 35px;
+/* CARDS */
+
+.impact-grid,
+.impact-steps {
+    display: flex;
+    gap: 20px;
 }
 
-/*IMPACT CARDS*/
-.impact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.impact-card {
-    padding: 25px;
-    background-color: #FFFFFF;
-    border-top: 3px solid #A36A19;
+.impact-card,
+.impact-step {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
 }
 
 .impact-number {
     color: #A36A19;
-    font-weight: bold;
-    font-size: 14px;
 }
 
-.impact-card h3 {
-    margin-bottom: 10px;
-}
-
-/*FOCUS AREAS TABLE*/
-.impact-table-wrapper {
-    overflow-x: auto;
-}
+/* TABLE */
 
 .impact-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #FFFDF5;
-    margin-top: 30px;
-}
-
-.impact-table caption {
-    text-align: left;
-    padding: 15px 0;
-    font-weight: bold;
-    color: #183F34;
 }
 
 .impact-table th,
 .impact-table td {
+    padding: 12px;
+    border: 1px solid #DDDFD2;
     text-align: left;
-    padding: 18px;
-    border-bottom: 1px solid #DDDFD2;
 }
 
-.impact-table thead th {
-    background-color: #183F34;
-    color: white;
-}
-
-.impact-table tbody tr:hover {
-    background-color: #E8EDDF;
-}
-
-/*OUR APPROACH */
-
-.impact-feature {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
+/* NOTE */
 
 .impact-note {
     background-color: #E8EDDF;
+    padding: 15px;
     border-left: 5px solid #A36A19;
-    padding: 15px 20px;
 }
 
-/*HOW WE CREATE IMPACT*/
+/* APPROACH */
 
-.impact-steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 35px;
+.impact-feature {
+    display: flex;
+    gap: 20px;
 }
 
-.impact-step {
-    padding: 25px;
-    background-color: #FFFDF5;
-    border-top: 3px solid #A36A19;
-}
-
-.impact-step h3 {
-    color: #183F34;
-}
-
-/*FOOTER*/
+/* FOOTER */
 
 footer {
-    background-color: #13342B;
-    color: #E0E9E1;
+    background-color: #183F34;
+    color: white;
     text-align: center;
-    padding: 40px 8%;
-}
-
-footer p {
-    margin: 6px 0;
-}
-
-.footer-brand {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 6px;
-    color: #FFFDF5;
+    padding: 25px;
 }
 
 footer a {
-    color: #FFFDF5;
+    color: white;
 }
 
-footer a:hover,
-footer a:focus {
-    color: #E5C993;
-}
+/* MOBILE */
 
-footer .small {
-    font-size: 14px;
-    color: #C3D0C6;
-}
-
-/* KEYBOARD ACCESSIBILITY */
-
-a:focus-visible {
-    outline: 3px solid #A36A19;
-    outline-offset: 4px;
-}
-
-/* MOBILE RESPONSIVE DESIGN */
-
-@media screen and (max-width: 800px) {
-
-    .header-content {
+@media (max-width: 800px) {
+    .header-content,
+    .impact-grid,
+    .impact-steps,
+    .impact-feature {
         flex-direction: column;
-        gap: 15px;
     }
 
     nav {
         text-align: center;
     }
 
-    nav a {
-        padding: 8px;
-    }
-
-    .impact-container {
-        width: 90%;
-    }
-
-    .impact-grid,
-    .impact-steps,
-    .impact-feature {
-        grid-template-columns: 1fr;
-    }
-
-    .impact-hero {
-        padding: 70px 0;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 30px;
+    .impact-hero h1 {
+        font-size: 32px;
     }
 }
